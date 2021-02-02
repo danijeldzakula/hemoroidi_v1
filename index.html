@@ -15,8 +15,7 @@
         <link type="text/css" rel="stylesheet" href="./css/style.css" />
         <!-- Script -->
         <script src="./js/jquery.min.js"></script>
-        <script src="./js/lastpack.js"></script>        
-        <script src="./js/script.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
 
     </head>
     <body>
@@ -24,11 +23,11 @@
         <header class="header">
             <div class="container">
                 <img src="./img/logo.png" alt="logo">
-                <span class="header-spec"><a href="#specialist" class="scroll-to">Мнения специалистов</a></span>
-                <span class="header-rewiev"><a href="#review" class="scroll-to">Отзывы клиентов</a></span>
+                <span class="header-spec"><a href="#specialist" class="scroll-to">Mišljenje stručnjaka</a></span>
+                <span class="header-rewiev"><a href="#review" class="scroll-to">Pregledi kupaca</a></span>
                 <div class="btn">
-                    Заказать обратный звонок
-                    <div class="btn ever-popup-btn header-btn-hover">Заказать обратный звонок</div>
+                    Zatražite povrati poziv
+                    <div class="btn ever-popup-btn header-btn-hover">Zatražite povrati poziv</div>
                 </div>
             </div>
         </header>
@@ -39,63 +38,73 @@
                         <img src="./img/product1.png" alt="pack" class="img">
                     </div>
                     <div class="main-block-left">
-                        <h1 class="main-block-title"><span>Ректин – </span>комплексное средство от геморроя</h1>
+                        <h1 class="main-block-title"><span>Rektin - </span> Idealno rešenje za problem s' hemoroidima</h1>
                         <h3 class="main-block-subtitle">Устраняет причину болезни и не дает геморрою вернуться</h3>
                         <ul class="main-block-list">
                             <li class="main-block-item">
-                                Останавливает кровотечение <br><span>после 2 применений</span>
+                                Zaustavlja krvarenje <br><span>posle svega 2 primene</span>
                             </li>
                             <li class="main-block-item">
-                                Снимает воспаление и боль <br><span>после 3 применений</span>
+                                Smanjuje upalu i bol <br><span>posle svega 3 primene</span>
                             </li>
                             <li class="main-block-item">
-                                Предотвращает <br>возвращение геморроя <br><span>при закреплении курса</span>
+                                Sprečava <br>ponovnu pojavu hemoroida<br><span>po završetku terapije</span>
                             </li>
                         </ul>
                     </div>
                     <div class="main-block-right">
-                        <p class="main-block-text">За этот год <span>12 369</span> человек избавились от геморроя благодаря Ректину</p>
+                        <p class="main-block-text">Tokom ove godine <span>12 369</span> ljudi se rešilo hemoroida zahvaljujući Rektin preparatu</p>
                         <form action="/order" method="post" class="x_order_form main-block-form orderformcdn">
                             <div class="flex-price">
                                 <div class="old-price">
-                                    <p class="top-text">Cтарая цена</p>
-                                    <p class="price"><span class="x_price_previous number price_land_s2">392</span><span class="x_currency price_land_curr">руб.</span></p>
+                                    <p class="top-text">Stara cena</p>
+                                    <p class="price"><span class="x_price_previous number price_land_s2">4998</span><span class="x_currency price_land_curr">RSD</span></p>
                                 </div>
                                 <div class="new-price">
-                                    <p class="top-text">Новая цена</p>
-                                    <p class="price radius"><span class="x_price_current number price_land_s1">196</span><span class="x_currency price_land_curr">руб.</span>*</p>
+                                    <p class="top-text">Nova cena</p>
+                                    <p class="price radius"><span class="x_price_current number price_land_s1">2499</span><span class="x_currency price_land_curr">RSD</span>*</p>
                                 </div>
                             </div>
                             <select class="input" name="country">
-                                <option value="271" selected="selected">Россия</option>
+                                <option value="271" selected="selected">Srbija</option>
                             </select>
-                            <label class="name-label"><input type="text" placeholder="Моё имя" required="" class="input" name="name"><input type="hidden" id="ts_check" name="ts_check" value=""></label>
-                            <label class="phone-label"><input type="tel" placeholder="Мой телефон" required="" class="input" name="phone"></label>
-                            <input type="hidden" name="dop_params[color]" value="">
-                            <input type="hidden" name="address" value="">
-                            <input type="hidden" name="product_count" id="product_count" value="1">
-                            <input type="hidden" name="number_product" value="3792">
-                            <input type="hidden" name="split_test_id" value="0">
-                            <input type="hidden" name="split_test" value="0">
-                            <input type="hidden" name="split_test_host" value="sale-rectyn.natural-sales.com">
-                            <input type="hidden" name="fchck" value="">
-                            <input type="hidden" name="ucfi" id="ucfi" value="0">                    
+                            <label class="name-label">
+                                <input  type="text" 
+                                        placeholder="Ime i Prezime" 
+                                        required="" 
+                                        class="input" 
+                                        name="name">
+                            </label>
+
+                            <label class="phone-label">
+                                <input  type="tel" 
+                                        placeholder="Broj telefona" 
+                                        required="" 
+                                        class="input" 
+                                        name="phone">
+                            </label>
+
+                
                             <div class="relative">
-                                <button class="form-btn">Заказать</button>
-                                <button class="form-btn form-btn-hover">Заказать</button>
+                                <button class="form-btn">Poručite odmah</button>
+                                <button class="form-btn form-btn-hover">Poručite odmah</button>
                             </div>
-                            <p class="bottom-text">Осталось <span class="lastpack">59</span> упаковок по Акции</p>
+                            <p class="bottom-text">
+                                Preostalo 
+                                <span class="lastpack">59</span> 
+                                kom. po akcijskoj ceni!
+                            </p>
                         </form>
-                        <p class="ps-text">*цена за порцию </p>
-                        <p class="save-text">Ваши данные защищены!</p>
+                        <p class="ps-text">*cena za pakovanje </p>
+                        <p class="save-text">Vaši podaci su potpuno bezbedni!</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section2">
             <div class="container">
-                <h2 class="section2-title">Осложнения при геморрое,
-                    <br><span>если не начать бороться с ним вовремя</span>
+                <h2 class="section2-title">Moguće komplikacije sa hemoroidima
+                    <br><span>ukoliko ne počnete da ih lečite na vreme</span>
                 </h2>
                 <div class="owl-carousel">
                     <div>
@@ -103,43 +112,43 @@
                             <img src="./img/carousel1.png" alt="carousel1">
                             <span class="circle-gradient"></span>
                         </div>
-                        <p>Воспаление промежности и половых органов</p>
+                        <p>Upale perineuma i polnih organa</p>
                     </div>
                     <div>
                         <div class="carousel-img">
                             <img src="./img/carousel2.png" alt="carousel2">
                             <span class="circle-gradient"></span>
                         </div>
-                        <p>Некроз прямой кишки (омертвение)</p>
+                        <p>Rektalna nekroza (odumiranje tkiva)</p>
                     </div>
                     <div>
                         <div class="carousel-img">
                             <img src="./img/carousel3.png" alt="carousel3">
                             <span class="circle-gradient"></span>
                         </div>
-                        <p>Гнойные воспаления, парапроктит</p>
+                        <p>Gnojne upale, paraproktoza</p>
                     </div>
                     <div>
                         <div class="carousel-img">
                             <img src="./img/carousel4.png" alt="carousel4">
                             <span class="circle-gradient"></span>
                         </div>
-                        <p>Прорывы гноя в брюшную полость</p>
+                        <p>Provaljivanje gnoja u trbušnu šupljinu</p>
                     </div>
                     <div>
                         <div class="carousel-img">
                             <img src="./img/carousel5.png" alt="carousel5">
                             <span class="circle-gradient"></span>
                         </div>
-                        <p>Тромбоз (образование сгустков крови)</p>
+                        <p>Tromboza (stvaranje krvnih ugrušaka)</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section3">
             <div class="container">
-                <h2 class="section3-title">Ректин работает комплексно:</h2>
-                <p class="section3-subtitle">избавляет от <span>проявлений</span> и <span>причин</span> геморроя</p>
+                <h2 class="section3-title">Rektin deluje na više nivoa:</h2>
+                <p class="section3-subtitle">preventivno deluje na <span>pojavu </span> i <span>uzroke pojavljivanja </span> hemoroida</p>
                 <div class="main-content clearfix">
                     <div class="center-block">
                         <img src="./img/product1.png" alt="pack" class="img">
@@ -151,36 +160,36 @@
                         </div>
                     </div>
                     <div class="left-block">
-                        <h3 class="block-title">Свечи работают направленно и быстро</h3>
+                        <h3 class="block-title">Čepići deluju direktno i brzo</h3>
                         <ul>
-                            <li class="block-item">Быстро устраняют кровотечения
-                                <span>благодаря концентратам: плодов каштана, амаранта, бурых морских водорослей</span>
+                            <li class="block-item">Brzo zaustavljaju 
+                                <span>krvarenje zahvaljujući koncentratima: ploda kestena, štira i smeđih algi</span>
                             </li>
-                            <li class="block-item">Снимают зуд и облегчают боль
-                                <span>благодаря гидролату пантов марала, корню женьшеня, прополису</span>
+                            <li class="block-item">Smanjuje svrab i umanjuje bol 
+                                <span>zahvaljujući hidrolatu jelenskih rogova, korenu ženšena i propolisu</span>
                             </li>
-                            <li class="block-item">Заживляют трещины и язвы
-                                <span>благодаря зверобою, кордицепсу, цветкам тысячелистника, ромашке</span>
+                            <li class="block-item">Zaceljuje fisure i zagnojenja
+                                <span>zahvaljujući kantarionu, kordicepsu, cvetovima hajdučke trave i kamilice</span>
                             </li>
-                            <li class="block-item">Предотвращают патологии вен при беременности
-                                <span>благодаря календуле, ромашке, плодам черники</span>
+                            <li class="block-item">Sprečava pojavu patoloških promena vena u toku trudnoće
+                                <span>zahvaljujući ekstratima nevena, kamilice i ploda borovnice</span>
                             </li>
                         </ul>
                     </div>
                     <div class="right-block">
-                        <h3 class="block-title">Капсулы в активной среде действуют на весь организм</h3>
+                        <h3 class="block-title">Kapsule dejstvuju aktivno i holistički - na ceo organizam</h3>
                         <ul>
-                            <li class="block-item">Возвращают тонус и эластичность вен
-                                <span>благодаря листьям иглицы колючей, концентрату плодов каштана</span>
+                            <li class="block-item">Vraćaju tonus i elastičnost venama 
+                                <span>zahvaljujući koncentratu kostrike i ploda kestena</span>
                             </li>
-                            <li class="block-item">Запускают регенерацию тканей ануса
-                                <span>благодаря маточному молочку, концентрату зверобоя, каменному маслу (бракшун)</span>
+                            <li class="block-item">Stimuliše regeneraciju tkiva anusa
+                                <span>zahvaljujući matičnom mleču, koncentratu kantariona i kamenom ulju</span>
                             </li>
-                            <li class="block-item">Устраняют инфекции и гнойные процессы
-                                <span>благодаря иглице мясистой, концентрату коры и листьев гамамелиса, грибу рейши</span>
+                            <li class="block-item">Uklanja infekcije i upalne
+                                <span>procese uz pomoć kostrike, reiši gljive i američke leske</span>
                             </li>
-                            <li class="block-item">Предотвращают возвращение геморроя
-                                <span>благодаря гинкго билоба, корню женьшеня, шиитаке</span>
+                            <li class="block-item">Sprečava ponovnu pojavu hemoroida
+                                <span>zahvaljujući ginko bilobi, korenu ženšena i šitake pečurkama</span>
                             </li>
                         </ul>
                     </div>
@@ -189,54 +198,54 @@
         </section>
         <section class="section4">
             <div class="container">
-                <h2 class="section4-title">Ректин помогает <br><span>при всех формах геморроя</span></h2>
+                <h2 class="section4-title">Rektin pomaže <br><span>kod svih tipova hemoroida</span></h2>
                 <ul class="section4-list">
                     <li class="section4-item">
-                        <h4 class="section4-subtitle">Внутренний геморрой</h4>
+                        <h4 class="section4-subtitle">Unutrašnji hemoroidi</h4>
                         <div class="list-block">
                             <div class="list-block-img">
                                 <img src="./img/section4-1.png" alt="4-1" class="img">
                             </div>
-                            <p>Симптомы:</p>
+                            <p>Simptomi:</p>
                             <ul class="section4-sublist">
-                                <li class="section4-subitem">Кровотечение во время дефекации или нагрузок</li>
-                                <li class="section4-subitem">Узлы возникают внутри анального канала</li>
-                                <li class="section4-subitem">Узлы покрыты слизистой</li>
-                                <li class="section4-subitem">В зависимости от стадии размер узлов увеличивается. Могут выпадать</li>
-                                <li class="section4-subitem">Вызывают отек и сильную боль</li>
+                                <li class="section4-subitem">Krvarenje prilikom defekacije ili naprezanja</li>
+                                <li class="section4-subitem">Stvaraju se otekline unutar analnog kanala</li>
+                                <li class="section4-subitem">Otekline su sluzave</li>
+                                <li class="section4-subitem">U zavisnosti od stadijuma, otekline se uveličavaju i mogu čak i da ispadaju iz analnog otvora</li>
+                                <li class="section4-subitem">Prouzrokuju otoke i veliki bol</li>
                             </ul>
                         </div>
                     </li>
                     <li class="section4-item">
-                        <h4 class="section4-subtitle">Внешний геморрой</h4>
+                        <h4 class="section4-subtitle">Spoljašnji hemoroidi</h4>
                         <div class="list-block">
                             <div class="list-block-img">
                                 <img src="./img/section4-2.png" alt="4-2" class="img">
                             </div>
-                            <p>Симптомы:</p>
+                            <p>Simptomi:</p>
                             <ul class="section4-sublist">
-                                <li class="section4-subitem">Кровотечений обычно не возникает</li>
-                                <li class="section4-subitem">Узлы возникают возле анального отверстия (не путать с выпавшими узлами!)</li>
-                                <li class="section4-subitem">Узлы покрыты кожей</li>
-                                <li class="section4-subitem">Размер узлов - 3мм и более</li>
-                                <li class="section4-subitem">Вызывают дискомфорт и боль</li>
+                                <li class="section4-subitem">Obično nema krvarenja</li>
+                                <li class="section4-subitem">Otekline se pojavljuju pored anusa (ne mešati ih sa oteklinama koje su ispale iz istog)</li>
+                                <li class="section4-subitem">Otekline su pokrivene kožom</li>
+                                <li class="section4-subitem">Veličina oteklina je od 3mm i veća</li>
+                                <li class="section4-subitem">Izazivaju osećaj nelagodnosti i bol</li>
                             </ul>
                         </div>
                     </li>
                     <li class="section4-item">
-                        <h4 class="section4-subtitle">Комбинированный</h4>
+                        <h4 class="section4-subtitle">Kombinovani hemoroidi</h4>
                         <div class="list-block">
                             <div class="list-block-img">
                                 <img src="./img/section4-3.png" alt="4-3" class="img">
                             </div>
-                            <p>Симптомы:</p>
+                            <p>Simptomi:</p>
                             <ul class="section4-sublist">
-                                <li class="section4-subitem no-icon">Сочетает признаки внутренней и внешней форм:</li>
-                                <li class="section4-subitem">Кровотечения</li>
-                                <li class="section4-subitem">Наружные и внутренние узлы</li>
-                                <li class="section4-subitem">Дискомфорт</li>
-                                <li class="section4-subitem">Отек</li>
-                                <li class="section4-subitem">Боль</li>
+                                <li class="section4-subitem no-icon">Sadrži kombinaciju unutrašnjih i spoljašnjih formi hemoroida</li>
+                                <li class="section4-subitem">Krvarenje</li>
+                                <li class="section4-subitem">Unutrašnje i spoljašnje otekline</li>
+                                <li class="section4-subitem">Osećaj nelagodnosti</li>
+                                <li class="section4-subitem">Otekline</li>
+                                <li class="section4-subitem">Bol</li>
                             </ul>
                         </div>
                     </li>
@@ -245,72 +254,72 @@
         </section>
         <section class="section5">
             <div class="container">
-                <h2 class="section5-title">Способ применения</h2>
+                <h2 class="section5-title">Način primene</h2>
                 <div class="section5-block">
                     <div class="top-block block">
                         <span class="down-center"></span>
-                        <h3 class="block-title">При внутреннем геморрое:</h3>
+                        <h3 class="block-title">Kod unutrašnjih hemoroida</h3>
                         <div class="left-list">
                             <div class="circle-candle"></div>
-                            <span class="candle candel-hover">Свечи<span class="circle"></span></span>
+                            <span class="candle candel-hover">Čepići<span class="circle"></span></span>
                             <ul>
-                                <li class="list-item">После опорожнения ополосните воспаленную зону <br>прохладной водой.</li>
-                                <li class="list-item"><span>Лежа на боку, чистыми руками введите свечу в прямую кишку.</span></li>
-                                <li class="list-item">Применяйте на ночь. Курс - 14-28 дней.</li>
+                                <li class="list-item">Posle izvršene velike nužde, dobro isperite zaraženu zonu hladnom vodom</li>
+                                <li class="list-item"><span>Ležeći na boku, čistim rukama ubacite čepić u debelo crevo</span></li>
+                                <li class="list-item">Primenjuje se noću. Tretman traje 14-28 dana</li>
                             </ul>
                         </div>
                         <div class="right-list">
                             <div class="circle-capsule"></div>
-                            <span class="capsule">Ампулы<span class="circle"></span></span>
+                            <span class="capsule">Ampule<span class="circle"></span></span>
                             <ul>
-                                <li class="list-item">Вскройте одну ампулу. Не храните ее открытой дольше 1 минуты.</li>
-                                <li class="list-item">Выпейте все ее содержимое. Не запивайте.</li>
-                                <li class="list-item">Принимать 1-2 раза в день за 30 минут до еды. Курс - 14-28 дней.</li>
+                                <li class="list-item">Otvorite jednu ampulu. Ne držite je otvorenu duže od jednog minuta.</li>
+                                <li class="list-item">Popijte sadržaj. Nemojte piti uz drugu tečnost.</li>
+                                <li class="list-item">Koristiti 1-2 puta na dan, 30 minuta pre obroka. Tretman traje 14-28 dana</li>
                             </ul>
                         </div>
                     </div>
                     <div class="center-block block hover-block">
                         <span class="down-center"></span>
-                        <h3 class="block-title">При внешнем геморрое:</h3>
+                        <h3 class="block-title">Kod spoljašnjih hemoroida:</h3>
                         <div class="left-block">
                             <div class="circle-candle"></div>
-                            <span class="candle candel-hover">Свечи<span class="circle"></span></span>
-                            <p>Рекомендовано дополнительно применять свечи</p>
-                            <p>Оставьте свой телефон, чтоб получить полную бесплатную консультацию</p>
+                            <span class="candle candel-hover">Čepići<span class="circle"></span></span>
+                            <p>Preporučeno je dodatno korišćenje čepića</p>
+                            <p>Ostavite svoj broj telefona da biste dobili pune besplatne konsultacije.</p>
                             <div class="btn">
-                                Заказать обратный звонок
-                                <div class="btn ever-popup-btn header-btn-hover">Заказать обратный звонок</div>
+                                Zakažite poziv
+                                <div class="btn ever-popup-btn header-btn-hover">Zakažite poziv</div>
                             </div>
                         </div>
                         <div class="right-list">
                             <div class="circle-capsule"></div>
-                            <span class="capsule">Ампулы<span class="circle"></span></span>
+                            <span class="capsule">Ampule<span class="circle"></span></span>
                             <ul>
-                                <li class="list-item">Вскройте одну ампулу. Не храните ее открытой дольше 1 минуты.</li>
-                                <li class="list-item">Выпейте все ее содержимое на голодный желудок. Не запивайте.</li>
-                                <li class="list-item">Принимать 1-2 раза в день за 30 минут до еды. Курс - 7-28 дней.</li>
+                                <li class="list-item">Otvorite jednu ampulu. Ne držite je otvorenu duže od jednog minuta.</li>
+                                <li class="list-item">Popijte sadržaj. Nemojte piti uz drugu tečnost.</li>
+                                <li class="list-item">Koristiti 1-2 puta na dan, 30 minuta pre obroka. Tretman traje 14-28 dana</li>
                             </ul>
                         </div>
                     </div>
                     <div class="bottom-block block hover-block">
                         <span class="down-center"></span>
-                        <h3 class="block-title">При комбинированном геморрое:</h3>
+                        <h3 class="block-title">Kombinovani hemoroidi:</h3>
                         <div class="left-list">
                             <div class="circle-candle"></div>
-                            <span class="candle candel-hover">Свечи<span class="circle"></span></span>
+                            <span class="candle candel-hover">Čepići<span class="circle"></span></span>
                             <ul>
-                                <li class="list-item">После опорожнения ополосните воспаленную зону <br>прохладной водой.</li>
-                                <li class="list-item">Лежа на боку, чистыми руками введите свечу в прямую кишку.</li>
-                                <li class="list-item">Применяйте на ночь. Курс - 14 дней.</li>
+                                <li class="list-item">Posle izvršene velike nužde, dobro isperite zaraženu zonu <br>hladnom vodom</li>
+                                <li class="list-item">Ležeći na boku, čistim rukama ubacite čepić u debelo crevo</li>
+                                <li class="list-item">Primenjuje se noću. Tretman traje 14-28 dana</li>
                             </ul>
                         </div>
                         <div class="right-list">
                             <div class="circle-capsule"></div>
-                            <span class="capsule">Ампулы<span class="circle"></span></span>
+                            <span class="capsule">Ampule<span class="circle"></span></span>
                             <ul>
-                                <li class="list-item">Вскройте одну ампулу. Не храните ее открытой дольше 1 минуты.</li>
-                                <li class="list-item">Выпейте все ее содержимое на голодный желудок. Не запивайте.</li>
-                                <li class="list-item">Принимать 1-2 раза в день за 30 минут до еды. Курс - 14-28 дней.</li>
+                                <li class="list-item">Otvorite jednu ampulu. Ne držite je otvorenu duže od jednog minuta.</li>
+                                <li class="list-item">Popijte sadržaj. Nemojte piti uz drugu tečnost.</li>
+                                <li class="list-item">Koristiti 1-2 puta na dan, 30 minuta pre obroka. Tretman traje 14-28 dana</li>
                             </ul>
                         </div>
                     </div>
@@ -320,35 +329,31 @@
         <section class="section6">
             <div class="container">
                 <div class="section6-top">
-                    <h2 class="section6-top-title">С Ректином вы:</h2>
+                    <h2 class="section6-top-title">Uz pomoć Rektina ćete:</h2>
                     <ul class="top-list">
-                        <li class="top-list-item"><span>1</span>Быстро устраните кровотечение и боль</li>
-                        <li class="top-list-item"><span>2</span>Избавитесь от воспалений и отеков</li>
-                        <li class="top-list-item"><span>3</span>Не будете опасаться возвращения болезни</li>
+                        <li class="top-list-item"><span>1</span>Brzo ukloniti krvarenje i bol</li>
+                        <li class="top-list-item"><span>2</span>Sprečiti upale i otoke</li>
+                        <li class="top-list-item"><span>3</span>Prestati da brinete da će se bolest vratiti</li>
                     </ul>
                     <div class="relative">
-                        <div class="form-btn form-btn_big"><a href="#bottom-form" class="scroll-to">Заказать Ректин</a></div>
-                        <div class="form-btn form-btn_big form-btn-hover"><a href="#bottom-form" class="scroll-to">Заказать Ректин</a></div>
+                        <div class="form-btn form-btn_big"><a href="#bottom-form" class="scroll-to">Poručite odmah</a></div>
+                        <div class="form-btn form-btn_big form-btn-hover"><a href="#bottom-form" class="scroll-to">Poručite odmah</a></div>
                     </div>
                 </div>
                 <div class="section6-bottom">
-                    <h2 class="section6-bottom-title">Масштабные исследования подтверждают эффективность <span>Ректина</span></h2>
-                    <p>Среди 5150 пациентов</p>
+                    <h2 class="section6-bottom-title">Klinička ispitivanja su potvrdila efikasnost  <span>Rektina</span></h2>
+                    <p>Od 5150 pacijenata</p>
                     <div class="section6-main clearfix">
                         <div class="left-block">
                             <ul class="left-block-list">
-                                <li class="left-block-item"><span class="circle"></span>27% (1390 человек) <span>полностью избавились от геморроя</span></li>
-                                <li class="left-block-item"><span class="circle"></span>71,7% (3693 человек) <span>устранили основные проблемы</span></li>
-                                <li class="left-block-item"><span class="circle"></span>1,3% (67 человек) <span>почувствовали некоторое облегчение</span></li>
+                                <li class="left-block-item"><span class="circle"></span>27% (1390 ljudi) se u <span>potpunosti izlečilo od hemoroida</span></li>
+                                <li class="left-block-item"><span class="circle"></span>71,7% (3693 ljudi) je <span> rešilo većinu problema</span></li>
+                                <li class="left-block-item"><span class="circle"></span>1,3% (67 ljudi) je <span> osetilo izvesno poboljšanje</span></li>
                             </ul>
                         </div>
                         <div class="right-block">
-                            <h4 class="right-block-title">Clinic-Pro <span>Клиника современной проктологии</span></h4>
-                            <p>Мы заботимся о своих клиентах, потому 
-                                рекомендуем только те средства, в которых уверены на 100%. Поэтому мы 
-                                провели клинические испытания Ректина - единственного сертифицированного
-                                препарата такого высокого класса.
-                            </p>
+                            <h4 class="right-block-title">Clinic Pro <span>Klinika savremene proktologije</span></h4>
+                            <p>Mi vodimo računa o našim pacijentima, tako da im preporučujemo isključivo proizvode u koje smo stoprocentno sigurni! Zbog toga smo izveli klinička ispitivanja Rektina - jedinog sertifikovanog prteparata toliko visoke klase</p>
                         </div>
                     </div>
                 </div>
@@ -365,7 +370,7 @@
         </section>
         <section class="section7" id="specialist">
             <div class="container">
-                <h2 class="section7-title">Почему специалисты рекомендуют <span class="yellow">Ректин</span></h2>
+                <h2 class="section7-title">Zašto specijalisti preporučuju <span class="yellow">Rektin</span></h2>
                 <div class="main-content">
                     <ul class="section7-list">
                         <li class="section7-item">
@@ -373,15 +378,9 @@
                                 <img src="./img/spec1.png" alt="spec1" class="spec-img">
                             </div>
                             <div class="item-block">
-                                <h4 class="spec-name">Дмитрий Грозак</h4>
-                                <span>Проктолог, онколог, высшая категория, стаж 23 года</span>
-                                <p class="main-text first">
-                                    О Ректине я узнал на конференции в Барселоне
-                                    в начале 2017 года. Сейчас рекомендую его пациентам с любой стадией 
-                                    геморроя. На сегодняшний день я не встречал более эффективного средства.
-                                    Ректин мягко и быстро воздействует на организм, возвращает тонус вен и 
-                                    делает невозможным повторение болезни.
-                                </p>
+                                <h4 class="spec-name">Dmitri Grozak</h4>
+                                <span>Proktolog, onkolog, 23 godine staža</span>
+                                <p class="main-text first">Za Rektin sam čuo na konferenciji u Barseloni 2017. godine. Sada ga preporučujem svojim pacijentima, bez obzira na stadijum hemoroida. Do današnjeg dana nisam naišao na efektivniji preparat. Rektin brzo i efikasno deluje na organizam, vraća tonus krvnih sudova, i sprečava ponovnu pojavu bolesti.</p>
                             </div>
                             <span class="main-text-btn">+</span>
                         </li>
@@ -390,15 +389,9 @@
                                 <img src="./img/spec2.png" alt="spec2" class="spec-img">
                             </div>
                             <div class="item-block">
-                                <h4 class="spec-name">Павлова Евгения</h4>
-                                <span>Уролог, проктолог, стаж 11 лет</span>
-                                <p class="main-text second">
-                                    Такая неловкая проблема, как геморрой, часто
-                                    возникает у беременных девушек. Я нашла комплексное средство, которое 
-                                    можно им рекомендовать - Ректин. И свечи, и ампулы полностью 
-                                    натуральные, потому нет риска навредить ребенку или будущей маме. И в 
-                                    применении комплекс Ректин удобен.
-                                </p>
+                                <h4 class="spec-name">Jevgenija Pavlova</h4>
+                                <span>Urolog, proktolog, 11 godina staža</span>
+                                <p class="main-text second">Takav neprijatan problem kao što su hemoroidi se često javlja kod trudnica. Ja sam pronašla efikasno sredstvo koje im može pomoći - Rektin. I čepići i ampule su potpuno neutralni tako da ne postoji rizik za plod i za buduću majku. I za samu primenu je Rektin veoma zgodan i lak za korišćenje.</p>
                             </div>
                             <span class="main-text-btn">+</span>
                         </li>
@@ -407,15 +400,9 @@
                                 <img src="./img/spec3.png" alt="spec3" class="spec-img">
                             </div>
                             <div class="item-block">
-                                <h4 class="spec-name">Мамедов <br>Роман Владимирович</h4>
-                                <span>Проктолог, флеболог, стаж 27 лет</span>
-                                <p class="main-text third">
-                                    Основное в лечении геморроя - устранить 
-                                    дряблость вен. Крем этого не сделает. Если не хотите, чтоб у вас всю 
-                                    жизнь кровоточила слизистая - займитесь собой. Пройдите курс Ректина, 
-                                    правильно питайтесь, следите за гигиеной. Применяйте Ректин для 
-                                    профилактики, это сэкономит вам массу нервов и денег.
-                                </p>
+                                <h4 class="spec-name">Mamedov <br/> Roman Vladimirovič</h4>
+                                <span>Proktolog, Flebolog, 27 godina staža</span>
+                                <p class="main-text third">Osnovno kod lečenja hemoroida je otkloniti uzroke slabljenja krvnih sudova. Kreme protiv hemoroida to ne mogu da urade. Ukoliko ne želite da celog života imate problem sa krvavom i sluzavom stolicom, učinite nešto za sebe! Koristite Rektin, pravilno se hranite i obratite pažnju na higijenu. Ukoliko koristite Rektin kao meru predostrožnosti, to će vam uštedeti mnogo živaca i novca.</p>
                             </div>
                             <span class="main-text-btn">+</span>
                         </li>
@@ -425,27 +412,17 @@
         </section>
         <section class="section8" id="review">
             <div class="container">
-                <h2 class="section8-title">Отзывы людей, которые принимали <span>Ректин</span></h2>
-                <h4 class="section8-subtitle">Вы принимали Ректин? Помогите другим убедиться в его эффективности.</h4>
+                <h2 class="section8-title">Svedočanstva ljudi koji su koristili <span> Rektin</span></h2>
+                <h4 class="section8-subtitle">Koristili ste Rektin? Pomozite drugima da se uvere u njegovu efikasnost.</h4>
                 <ul class="section8-list">
                     <li class="section8-item">
                         <div class="img-block">
                             <img src="./img/people1.png" alt="people1">
                         </div>
                         <div class="item-block">
-                            <h4 class="people-name">Марина, 45 лет</h4>
-                            <p>С Ректином проще и быстрее!</p>
-                            <span>Здравствуйте. У меня была проблема - геморрой 
-                            3-й стадии. Я его не лечила, пока совсем плохо не стало. Стыдно в аптеке
-                            было даже спрашивать, какие лекарства бывают! Кошмар это был!
-                            Все средства, которые мне предложили, нужно по 4 
-                            раза в день в себя засовывать. А потом полежать полчаса, пока не 
-                            усвоятся. А работать за меня в это время директор будет?
-                            Сотрудница увидела, что я сидеть не могу, и о 
-                            Ректине рассказала. Как же я ей благодарна! Средство мне уже на 2-й день
-                            помогло! И я не волновалась, что свечи протекать будут и на одежде 
-                            кто-то пятна увидит.
-                            </span>
+                            <h4 class="people-name">Marina, 45 godina</h4>
+                            <p>S rektinom je lakše i brže</p>
+                            <span>Pozdrav. Imala sam problemom s hemoroidima koji su ušli u treći stadijum. Nisam se lečila, i situacija je postala jako loša. Bilo me je čak sramota i da pitam u apoteci da mi preporuče nešto za taj problem. To je bio pravi košmar! Sve što su mi predlagali je zahtevalo primenu 4 puta dnevno, a posle primene je trebalo mirovatio pola sata dok ne počne da deluje. A za to vreme ko će raditi umesto mene? Koleginica je primetila da više ne mogu ni da sedim normalno, i preporučila mi Rektin. Koliko sam joj samo zahvalna! Već za 2 dana mi je bilo mnogo bolje! I nije bilo opasnosti da će čepići procuriti i da će se videti tragovi na odeći.</span>
                         </div>
                         <span class="main-text-btn">+</span>
                     </li>
@@ -454,17 +431,9 @@
                             <img src="./img/people2.png" alt="people2">
                         </div>
                         <div class="item-block">
-                            <h4 class="people-name">Владимир, 45 лет</h4>
-                            <p>По моему опыту лечения Ректин лидирует</p>
-                            <span>Я с геморроем знаком с 25 лет. Вены слабые, и 
-                            похудеть не мешало бы. Каждый год обязательно были проблемы. За 20 лет 
-                            я, как вы понимаете, много средств попробовал. Одно из популярных - 
-                            Р**** - даже считал хорошим, но 2 года назад оно перестало помогать и 
-                            мне, и знакомым. Видимо, производитель стал экономить и рецепт поменял.
-                            На форуме прочитал о Ректине. Там его хвалили. Я 
-                            тоже заказал. Товарищи, это бомба! Полтора года гемор не возвращается! В
-                            общем, я одобряю!
-                            </span>
+                            <h4 class="people-name">Vladimir, 45 godina</h4>
+                            <p>Po mom mišljenju, Rektin je najbolji</p>
+                            <span>Hemoroidi su me mučili celih 25 godina. Imam slabe krvne sudove, a ne bi bilo na odmet ni da sam malo slabiji. Svake godine su se redovno javljali problemi. Za sve te godine, kao što možete i da pretpostavite, isprobao sam razne preparate. Jedan od popularnih preparata - R**** je čak bio i dobar, ali je pre 2 godine prestao da deluje u mom slučaju. Postalo je očigledno da je proizvođač počeo da štedi na komponentama, i više nije bilo pređašnjih efekata. Na jednom forumu sam saznao za Rektin. Tamo su ga hvalili, pa sam i ja naručio jednu dozu. Ljudi moji, ovo je prava bomba! Već godinu i po dana se hemoroidi ne pojavljuju! Sve u svemu - velika preporuka!</span>
                         </div>
                         <span class="main-text-btn">+</span>
                     </li>
@@ -473,17 +442,9 @@
                             <img src="./img/people3.png" alt="people3">
                         </div>
                         <div class="item-block">
-                            <h4 class="people-name">Кристина, 28 лет</h4>
-                            <p>После родов я не могла избавиться от боли</p>
-                            <span>Я работаю продавцом-консультантом. Год назад я
-                            родила, с разрывами, ребенок был крупный - 4500. Работа в основном 
-                            сидячая. Из-за этого всего появился геморрой.
-                            Мне больно было чихать, кашлять, смеяться! Я не 
-                            могла избавиться от боли! Ни крем, ни свечи не действовали, потому что я
-                            все время сидела на больном месте. Знакомая из роддома посоветовала 
-                            Ректин. На третий день курса я уже чувствовала себя совсем комфортно! 
-                            Это и правда отличное средство!
-                            </span>
+                            <h4 class="people-name">Kristina, 28 godina</h4>
+                            <p>Posle porođaja nisam mogla da se oslobodim bola</p>
+                            <span>Radim kao prodavac - konsultant. Pre godinu dana sam imala težak porođaj, jer je beba bila krupna - 4 i po kile. Moj posao podrazumeva neprekidno sedenje. Zbog svega toga, pojavili su mi se hemoroidi. Bolelo je čak i ako kinem, nakašljem se ili se smejem. Nije bilo pomoći! Ni kreme ni razni čepići nisu pomagali, jer sam sve vreme morala da sedim. Poznanica iz porodilišta mi je preporučila Rektin. Već treći dan posle početka korišćenja sam se osećala sasvim dobro! Ovo je zaista odlična stvar!</span>
                         </div>
                         <span class="main-text-btn">+</span>
                     </li>
@@ -492,16 +453,15 @@
         </section>
         <section class="section10">
             <div class="container">
-                <h2 class="section10-title">Осторожно! <span>Подделки!</span></h2>
-                <h4 class="section10-subtitle">В последнее время к нам участились звонки с жалобами на недобросовестных продавцов препарата Ректин.
-                    Будьте внимательны при заказе. Оригинальное средство имеет на упаковке
-                    <span>защитную голограмму и индивидуальный код.</span>
+                <h2 class="section10-title">Pažnja! <span>Falsifikati!</span></h2>
+                <h4 class="section10-subtitle">U poslednje vreme dovbijamo sve više žalbi na lažne prodavce Rektina. Budite obazrivi prilikom naručivanja. Originalni preparat ima na 
+                    <span>pakovanju hologramski pečat i individualni kod.</span>
                 </h4>
                 <div class="check-code">
-                    <input type="text" placeholder="Введите номер с упаковки" class="check__field">
+                    <input type="text" placeholder="Unesite broj sa paketa" class="check__field">
                     <div class="relative">
-                        <button class="form-btn form-btn_small">Проверить код</button>
-                        <button class="form-btn form-btn_small check__btn form-btn-hover">Проверить код</button>
+                        <button class="form-btn form-btn_small">Proverite kod</button>
+                        <button class="form-btn form-btn_small check__btn form-btn-hover">Proverite kod</button>
                     </div>
                     <span class="check__result"></span>
                 </div>
@@ -509,29 +469,36 @@
         </section>
         <section class="section11">
             <div class="container">
-                <h2 class="section11-title">Заказать оригинальный Ректин <br><span>можно только на нашем сайте</span></h2>
+                <h2 class="section11-title">Originalni Rektin <br><span>možete poručiti jedino na našem sajtu</span></h2>
                 <div class="section11-animate">
                     <ul class="section11-list">
                         <li class="section11-item">
                             <div class="img-block">
                                 <img src="./img/section11-1.png" alt="11-1" class="img">
                                 <div class="section11-price">
-                                    <span class="sectio11-oldprice"><span class="x_price_previous number price_land_s2">392</span><span class="x_currency price_land_curr">руб.</span></span> <span class="sectio11-newprice"><span class="x_price_current number price_land_s1">196</span><span class="x_currency price_land_curr">руб.</span>*</span>
+                                    <span class="sectio11-oldprice">
+                                        <span class="x_price_previous number price_land_s2">4998</span>
+                                        <span class="x_currency price_land_curr">RSD</span>
+                                    </span> 
+                                    <span class="sectio11-newprice">
+                                        <span class="x_price_current number price_land_s1">2499</span>
+                                        <span class="x_currency price_land_curr">RSD</span>
+                                    </span>
                                 </div>
                             </div>
-                            <p>Заполните форму на сайте</p>
+                            <p>Popunite formular na sajtu</p>
                         </li>
                         <li class="section11-item">
                             <div class="img-block">
                                 <img src="./img/section11-2.png" alt="11-2" class="img">
                             </div>
-                            <p>Дождитесь звонка оператора</p>
+                            <p>Sačekajte poziv operatera</p>
                         </li>
                         <li class="section11-item">
                             <div class="img-block">
                                 <img src="./img/section11-3.png" alt="11-3" class="img">
                             </div>
-                            <p>Получите посылку на почте</p>
+                            <p>Primite pošiljku putem pošte</p>
                         </li>
                     </ul>
                     <div class="first-animate-block">
@@ -581,7 +548,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="bottom-text">Если у вас возникают вопросы, вы всегда можете с нами связаться и получить подробную <span>бесплатную</span> консультацию о продукте и способе его применения.</p>
+                <p class="bottom-text">Ukoliko imate bilo kakvih nedoumica, uvek možete dobiti punu <span> besplatnu </span> konsultaciju o svojstvima preparata i načinu primene.</p>
             </div>
         </section>
         <section class="section1 section12">
@@ -591,112 +558,136 @@
                         <img src="./img/product1.png" alt="pack" class="img">
                     </div>
                     <div class="main-block-left">
-                        <h2 class="main-block-title">Устраните причину болезни и <span>не дайте геморрою вернуться</span></h2>
+                        <h2 class="main-block-title">Otklonite uzrok bolesti i <span>ne dozvolite hemoroidima da se vrate</span></h2>
                         <ul class="main-block-list">
                             <li class="main-block-item">
-                                Останавливает кровотечение <br><span>после 2 применений</span>
+                                Zaustavlja krvarenje <br><span>posle 2 primene</span>
                             </li>
                             <li class="main-block-item">
-                                Снимает воспаление и боль <br><span>после 3 применений</span>
+                                Smanjuje upalu i bol <br><span>posle samo 3 primene</span>
                             </li>
                             <li class="main-block-item">
-                                Предотвращает <br> возвращение геморроя <br><span>при закреплении курса</span>
+                                Sprečava <br> ponovno pojavljivanje hemoroida <br><span>po završetku tretmana</span>
                             </li>
                         </ul>
                     </div>
                     <div class="main-block-right" id="bottom-form">
-                        <p class="main-block-text">За этот год <span>12 369</span> человек избавились от геморроя благодаря Ректину</p>
+                        <p class="main-block-text">Tokom ove godine <span>12 369</span> ljudi se rešilo hemoroida zahvaljujući Rektin preparatu</p>
                         <form action="/order" method="post" class="x_order_form main-block-form orderformcdn">
                             <div class="flex-price">
                                 <div class="old-price">
-                                    <p class="top-text">Cтарая цена</p>
-                                    <p class="price"><span class="x_price_previous number price_land_s2">392</span><span class="x_currency price_land_curr">руб.</span></p>
+                                    <p class="top-text">Stara cena</p>
+                                    <p class="price">
+                                        <span class="x_price_previous number price_land_s2">4998</span>
+                                        <span class="x_currency price_land_curr">RSD</span>
+                                    </p>
                                 </div>
                                 <div class="new-price">
-                                    <p class="top-text">Новая цена</p>
-                                    <p class="price radius"><span class="x_price_current number price_land_s1">196</span><span class="x_currency price_land_curr">руб.</span>*</p>
+                                    <p class="top-text">Nova cena</p>
+                                    <p class="price radius">
+                                        <span class="x_price_current number price_land_s1">2499</span>
+                                        <span class="x_currency price_land_curr">RSD</span>
+                                    </p>
                                 </div>
                             </div>
                             <select class="input" name="country">
-                                <option value="271" selected="selected">Россия</option>
+                                <option value="271" selected="selected">Srbija</option>
                             </select>
-                            <label class="name-label"><input type="text" placeholder="Моё имя" required="" class="input" name="name"><input type="hidden" id="ts_check" name="ts_check" value=""></label>
-                            <label class="phone-label"><input type="tel" placeholder="Мой телефон" required="" class="input" name="phone"></label>
-                            <input type="hidden" name="dop_params[color]" value="">
-                            <input type="hidden" name="address" value="">
-                            <input type="hidden" name="product_count" id="product_count" value="1">
-                            <input type="hidden" name="number_product" value="3792">
-                            <input type="hidden" name="split_test_id" value="0">
-                            <input type="hidden" name="split_test" value="0">
-                            <input type="hidden" name="split_test_host" value="sale-rectyn.natural-sales.com">
-                            <input type="hidden" name="fchck" value="18f1d1a7aaa0264594a231da279c83b7f9fa722a">
-                            <input type="hidden" name="ucfi" id="ucfi" value="0">                    
+                            <label class="name-label">
+                                <input  type="text" 
+                                        placeholder="Ime i Prezime" 
+                                        required="" 
+                                        class="input" 
+                                        name="name">
+                            </label>
+                            <label class="phone-label">
+                                <input  type="tel" 
+                                        placeholder="Broj telefona" 
+                                        required="" 
+                                        class="input" 
+                                        name="phone">
+                            </label>
+                 
                             <div class="relative">
-                                <button class="form-btn">Заказать</button>
-                                <button class="form-btn form-btn-hover">Заказать</button>
+                                <button class="form-btn">Poručite odmah</button>
+                                <button class="form-btn form-btn-hover">Poručite odmah</button>
                             </div>
-                            <p class="bottom-text">Осталось <span class="lastpack">59</span> упаковок по Акции</p>
+                            <p class="bottom-text">Preostalo <span class="lastpack">59</span> kom. po akcijskoj ceni!</p>
                         </form>
-                        <p class="ps-text">*цена за порцию </p>
-                        <p class="save-text">Ваши данные защищены!</p>
+                        <p class="ps-text">*cena za pakovanje</p>
+                        <p class="save-text">Vaši podaci su potpuno bezbedni!</p>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="footer copyright">
-            <img src="./img/rekv_ALL.png" style="display:block;margin:0 auto">
-            <div style="text-align: right"><img src="./img/1001transits.png" style="display: inline-block !important;"></div>
-            <p><a href="#link-to" target="_blank">Политика конфиденциальности</a></p>
+
+
+        <footer class="gl__footer">
+            <div class="contain">
+                <p class="copyright t-c"><strong>Copyright <script>document.write(new Date().getFullYear())</script> &#169;MEZATONE. All Rights Reserved</strong></p>
+                <p class="t-uc t-c">
+                    <a href="doc/terms.html" target="_blank" class="footer-link">
+                        <strong class="strong">Uslovi Korišćenja</strong>
+                    </a>
+                    <span class="sep"> | </span>
+                    <a href="doc/privacy.html" target="_blank" class="footer-link">
+                        <strong class="strong">Politika Privatnosti</strong>
+                    </a>
+                </p>
+                <p class="t-c fz-small">Klikom na dugme «poručiti» potvrdjujete da ste pročitali <a href="doc/privacy.html" target="_blank">« Politika Privatnosti »</a> i dali pristanak na obradu vaših ličnih podataka</p>
+            </div>
         </footer>
+
+
+
+
         <div class="ever-popup">
             <div class="ever-popup__inner">
                 <div class="ever-popup__close"></div>
                 <div class="main-block main-block-popup ever-popup__body">
                     <div class="left">
-                        <p>Оформите заказ по выгодной цене</p>
+                        <p>Pošaljite narudžbu po promotivnoj ceni</p>
                         <img src="./img/product1.png" alt="pack" class="img">
                     </div>
                     <form action="/order" method="post" class="x_order_form main-block-form orderformcdn">
                         <div class="flex-price">
                             <div class="old-price">
-                                <p class="top-text">Cтарая цена</p>
-                                <p class="price"><span class="x_price_previous number price_land_s2">392</span><span class="x_currency price_land_curr">руб.</span></p>
+                                <p class="top-text">Stara cena</p>
+                                <p class="price">
+                                    <span class="x_price_previous number price_land_s2">4999</span>
+                                    <span class="x_currency price_land_curr">RSD</span>
+                                </p>
                             </div>
                             <div class="new-price">
-                                <p class="top-text">Новая цена</p>
-                                <p class="price radius"><span class="x_price_current number price_land_s1">196</span><span class="x_currency price_land_curr">руб.</span>*</p>
+                                <p class="top-text">Nova cena</p>
+                                <p class="price radius">
+                                    <span class="x_price_current number price_land_s1">2499</span>
+                                    <span class="x_currency price_land_curr">RSD</span>
+                                </p>
                             </div>
                         </div>
                         <select class="input" name="country">
-                            <option value="271" selected="selected">Россия</option>
+                            <option value="271" selected="selected">Srbija</option>
                         </select>
                         <label class="name-label">
-                            <input type="text" placeholder="Моё имя" required="" class="input" name="name">
-                            <input type="hidden" id="ts_check" name="ts_check" value="">
+                            <input type="text" placeholder="Ime i Prezime" required="" class="input" name="name">
+                            
                         </label>
                         <label class="phone-label">
-                            <input type="tel" placeholder="Мой телефон" required="" class="input" name="phone">
+                            <input type="tel" placeholder="Broj telefona" required="" class="input" name="phone">
                         </label>
-                        <input type="hidden" name="dop_params[color]" value="">
-                        <input type="hidden" name="address" value="">
-                        <input type="hidden" name="product_count" id="product_count" value="1">
-                        <input type="hidden" name="number_product" value="3792">
-                        <input type="hidden" name="split_test_id" value="0">
-                        <input type="hidden" name="split_test" value="0">
-                        <input type="hidden" name="split_test_host" value="sale-rectyn.natural-sales.com">
-                        <input type="hidden" name="fchck" value="">
-                        <input type="hidden" name="ucfi" id="ucfi" value="0">                
+              
                         <div class="relative">
-                            <button class="form-btn">Заказать</button>
-                            <button class="form-btn form-btn-hover">Заказать</button>
+                            <button class="form-btn">Poručite odmah</button>
+                            <button class="form-btn form-btn-hover">Poručite odmah</button>
                         </div>
-                        <p class="ps-text black-color">*цена за порцию </p>
-                        <p class="bottom-text">Осталось <span class="lastpack">59</span> упаковок по Акции</p>
+                        <p class="ps-text black-color">*cena za pakovanje</p>
+                        <p class="bottom-text">Preostalo  <span class="lastpack">59</span> kom. po akcijskoj ceni</p>
                     </form>
                 </div>
             </div>
         </div>
 
-
+        <script src="./js/main.js"></script>
     </body>
 </html>
